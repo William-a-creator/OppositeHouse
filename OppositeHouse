@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class OppositeHouse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a house number:");
+        int num = Integer.valueOf(scanner.nextLine());
+        System.out.println("Enter the length of the street: ");
+        int length = Integer.valueOf(scanner.nextLine());
+
+        System.out.println(house(num, length));
+    }
+
+    public static long house(long houseNum, long length){
+        return 2*length - houseNum + 1;
+    }
+}
